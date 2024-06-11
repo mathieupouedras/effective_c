@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-    wchar_t c = "@";
-    printf("%s\n", c);
+
+    int i = 17;
+    int *ip = &i;
+
+    ip = &*ip;
+
+    printf("%d\n", *ip);
+
     return 0;
 }
